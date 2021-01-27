@@ -29,13 +29,13 @@
             
             <!-- Inicia Formulario -->
             <div>
-                <form>
+                <form method="POST">
                     <div class="section-flex">
                         <div class="elemnt-form">
                             <div class="label">
                                 <label for="type"> Tipo de mensaje </label>
                             </div> 
-                            <select id="type" name="type" required>
+                            <select id="type" name="type">
                                 <option value=""> Seleccione una opción</option>
                                 <option value="cotizacion"> Cotización</option> 
                                 <option value="saludo"> Saludo</option> 
@@ -47,21 +47,21 @@
                             <div class="label">
                                 <label for="name"> Nombres </label>
                             </div> 
-                            <input type="text" id="name" name="name" placeholder="Ingrese sus nombre" required>
+                            <input type="text" id="name" name="name" placeholder="Ingrese sus nombre" >
                         </div>
 
                         <div class="elemnt-form">
                             <div class="label">
                                 <label for="email"> Email </label>
                             </div> 
-                            <input type="text" id="email" name="email" placeholder="example@correo.com" required>
+                            <input type="text" id="email" name="email" placeholder="example@correo.com" >
                         </div>
 
                         <div class="elemnt-form">
                             <div class="label">
                                 <label for="celular"> Celular </label>
                             </div> 
-                            <input type="text" id="celular" name="celular" placeholder="Ingrese su celular" required>
+                            <input type="text" id="celular" name="celular" placeholder="Ingrese su celular" >
                         </div>
 
                         <div class="elemnt-form">
@@ -69,7 +69,7 @@
                                 <label for="comment"> Comentario </label>
                             </div> 
 
-                            <textarea  id="comment" name="comment" placeholder="Ingrese su comentario" required>
+                            <textarea  id="comment" name="comment" placeholder="Ingrese su comentario" >
                             </textarea>
                         </div>
 
@@ -94,7 +94,7 @@
                         </div>
 
                         <div class="btn-div">
-                            <button type="submit"> Enviar Datos </button>
+                            <button type="submit" onclick="validacioncampos()"> Enviar Datos </button>
                         </div>
 
                     </div>
@@ -105,6 +105,8 @@
         <footer>
             <p> Creado Por Profesor Cristhian Galvis </p>
         </footer>
+
+        <script src="./js/javascript.js"></script>
         
     </body>
 </html>
